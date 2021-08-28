@@ -22,6 +22,8 @@ class User < ApplicationRecord
       followings.include?(user)
   end
   
+  
+  
   attachment :profile_image, destroy: false
   
   validates :introduction, presence: false, length: { maximum: 50 }
